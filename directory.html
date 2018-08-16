@@ -1,0 +1,31 @@
+<div>
+    <select class = "directory" onclick = "clicked()">
+        <option value = "1" selected> My Childhood </option>
+        <option value = "2"> My Teenage Years </option>
+        <option value = "3"> My Plans for the Future </option>
+        <option value = "4"> Hobbies and Interests </option>
+    </select>
+    <button class = "directory" type="button">Take Me There!</button>
+</div>
+
+<script>
+
+function clicked() {
+    var getter = document.getElementsByClassName("directory");
+    var action = getter.options [getter.selectedIndex].value;
+
+    if (action = "1"){
+        href = "hobbies.html";
+    }
+    else if (action = "2"){
+        src = "myChildhood.html";       
+    }
+    else if (action = "3"){
+        src = "myTeenageYears.html";        
+    }
+    else if (action = "4"){
+        src = "plansForTheFuture.html";       
+    }
+}
+
+</script>
